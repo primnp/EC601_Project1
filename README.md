@@ -25,7 +25,7 @@ IoT security involves protecting connected devices. This can include being mindf
 4. Data integrity
   * All sensitive or confidential data must be encrypted during transmission and storage. 
   * There should be a strict access control policy for APIs to prevent Man in the Middle (MMITM), code injections, or distributed denial of service (DDos) assaults.
-5. Monitoring and detecting IoT devices
+5. Actively monitor and Detect IoT devics
   * Notify users about updated software when one becomes available. Also notify users if the software they are running is outdated. 
   * Constantly scans and monitors for attack entries that may occur.
 
@@ -49,7 +49,7 @@ Some of the state-of-art security analysis techniques used by blockchain-based a
 
 Even though there has been a high growth of IoT-based applications in the last few years, IoT still faces many challenges. Although blockchain-based technology can be used to help alleviate some of the IoT security risks, there are still some technology specific challenges with blockchain in IoT. Blockchain architecture is unsuitable for large-scale IoT networks, as the architecture has limited nodes in permissioned networks as well as limited throughputs. The garbage data generation of the blockchain technology also affects the overall performance of the system. Storage is also a big challenge as the nodes have to store ledger instead of any centralized server. In addition, there are compliance and legal issues that limit the adoption of blockchain technology from manufacturers and service providers. There should be defined regulatory rules so that adoption of blockchain technology with IoT can be done efficiently at a global scale.
 
-## Opensource Research
+## Open Source Research
 There are several open source projects which touch upon the IoT security analysis. This section will focus on the open source framework for IoT layers security analysis. 
 
 The first open source analysis framework is called **IoTSecFuzz (ISF)**. ISF is a framework for automatization of IoT layers security analysis. The ISF project is licensed under the MIT License. ISF’s goal is to combine comprehensive testing of IoT device security at all levels of implementation. The framework operates with tested devices at three levels: hardware (debugging interfaces), firmware (reverse engineering of the device’s OS), and communication (NRF24, Bluetooth, Wifi, ip-networking). ISF system is a flexible modular system in which users can add their own modules to be tested. Some of the modules available with current ISF framework includes, fast top-password protocol bruteforce, ubertooth, avr loader, ble_tool, cfe, etc. ISF has a console user interface in which the user can run tested devices with different modules. The framework is written by Ilya Shaposhnikov, Sergey Bliznyuk and Sofia Marakhovich. There has yet to be a contribution from other programmers aside from the three authors. The project's latest update was in 2018.
@@ -61,5 +61,29 @@ I tried to run IoTSecFuzz, however, I ran into a problem setting up modules for 
 However, the IoTSecFuzz Github repository has given a comprehensive example on how the framework can be applied.
 
 ## Reference
-I. Jakhar, A., 2021. expliot_framework / expliot. [online] GitLab. Available at: <https://gitlab.com/expliot_framework/expliot> [Accessed 18 September 2021].
-II. Shaposhnikov, S. Bliznyuk, and S. Marakhovich, “Invuls / Iot projects / IOTSECFUZZ,” GitLab. [Online]. Available: https://gitlab.com/invuls/iot-projects/iotsecfuzz. [Accessed: 17-Sep-2021]. 
+
+
+I. R. Atoui, “The Importance of Security by Design for IoT Devices,” IIoT World, 25-Apr-2018. [Online]. Available: https://www.iiot-world.com/ics-security/cybersecurity/the-importance-of-security-by-design-for-iot-devices/. [Accessed: 17-September-2021].
+
+II. F. H. Foomany, “IoT legislation device manufacturers need to know about,” SearchCompliance, 11-Aug-2021. [Online]. Available: https://searchcompliance.techtarget.com/post/IoT-legislation-device-manufacturers-need-to-know-about. [Accessed: 17-Sep-2021].
+
+III. “How to Secure IoT Devices in the Enterprise,” Palo Alto Networks. [Online]. Available: https://www.paloaltonetworks.com/cyberpedia/how-to-secure-iot-devices-in-the-enterprise. [Accessed: 18-Sep-2021].
+
+IV. “Internet of Things (IoT) security,” imperva, 29-Dec-2019. [Online]. Available: https://www.imperva.com/learn/application-security/iot-internet-of-things-security/. [Accessed: 18-Sep-2021].
+
+V. cuelogic, “IoT Application Security Challenges and Solutions,” IoT For All, 01-Oct-2019. [Online]. Available: https://www.iotforall.com/iot-application-security. [Accessed: 18-Sep-2021].
+
+VI. A. Jakhar, "expliot_framework / expliot," GitLab. [Online]. Available: https://gitlab.com/expliot_framework/expliot [Accessed: 18-September-2021].
+
+VII. L. Li, J. Liu, L. Cheng, S. Qiu, W. Wang, X. Zhang, and Z. Zhang, “CreditCoin: A Privacy-Preserving Blockchain-Based Incentive Announcement Network for Communications of Smart Vehicles,” IEEE Transactions on Intelligent Transportation Systems, vol. 19, no. 7, pp. 2204–2220, 2018.
+
+VIII. Q. Lin, H. Yan, Z. Huang, W. Chen, J. Shen, and Y. Tang, “An ID-Based Linearly Homomorphic Signature Scheme and Its Application in Blockchain,” IEEE Access, vol. 6, pp. 20632–20640, 2018.
+
+Shaposhnikov, S. Bliznyuk, and S. Marakhovich, “Invuls / Iot projects / IOTSECFUZZ,” GitLab. [Online]. Available: https://gitlab.com/invuls/iot-projects/iotsecfuzz. [Accessed: 17-Sep-2021]. 
+
+IX. S. Shea and I. Wigmore, “What is IoT Security?,” IoT Agenda, 06-Apr-2021. [Online]. Available: https://internetofthingsagenda.techtarget.com/definition/IoT-security-Internet-of-Things-security. [Accessed: 18-Sep-2021].
+
+X. A. Srivastava, S. Gupta, M. Quamara, P. Chaudhary, and V. J. Aski, “Future IoT-enabled threats and vulnerabilities: State of the art, challenges, and future prospects,” International Journal of Communication Systems, vol. 33, no. 12, May 2020.
+
+XI. W. Yin, Q. Wen, W. Li, H. Zhang, and Z. Jin, “An Anti-Quantum Transaction Authentication Approach in Blockchain,” IEEE Access, vol. 6, pp. 5393–5401, 2018.
+
